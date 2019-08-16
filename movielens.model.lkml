@@ -25,3 +25,5 @@ explore: ratings {
     relationship: many_to_one
   }
   }
+
+explore: users {}
