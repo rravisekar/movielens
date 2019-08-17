@@ -40,7 +40,7 @@ view: ratings {
   }
 
   measure: average_ratings {
-    type: count
+    type: average
     drill_fields: [movie_id, ratings.avg]
   }
 }
