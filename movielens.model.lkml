@@ -23,7 +23,16 @@ explore: ratings {
     type: left_outer
     sql_on: ${ratings.movie_id} = ${movies.movie_id} ;;
     relationship: many_to_one
+
+  }
+    join: movie_genres {
+      view_label: "Persons: Cities Lived:"
+      sql: LEFT JOIN UNNEST(${movie_genres.movie_genres}) as movie_genres ;;
+      relationship: one_to_many
+
   }
   }
 
 explore: users {}
+
+explore: movie_genres {}
