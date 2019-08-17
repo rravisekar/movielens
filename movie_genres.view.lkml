@@ -2,7 +2,6 @@ view: movie_genres {
   sql_table_name: movielens.movie_genres ;;
 
   dimension: movie_genres {
-    hidden: yes
     type: string
     sql: ${TABLE}.movie_genres ;;
   }
