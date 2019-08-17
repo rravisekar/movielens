@@ -24,7 +24,7 @@ view: movies {
 }
 
 view: genre {
-  dimension: name {
+  dimension: genre {
     sql: ${TABLE} ;;
   }
 }
