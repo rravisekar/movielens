@@ -38,4 +38,9 @@ view: ratings {
     type: count
     drill_fields: [user_id, ratings.count]
   }
+
+  measure: average_ratings {
+    type: count
+    drill_fields: [movie_id, ratings.avg]
+  }
 }
