@@ -25,10 +25,9 @@ explore: ratings {
     relationship: many_to_one
 
   }
-    join: movie_genres {
-      sql: LEFT JOIN UNNEST(${movie_genres.movie_genres}) as movie_genres ;;
-      relationship: one_to_many
-
+  join: genre {
+    sql:  LEFT JOIN UNNEST(SPLIT(${movies.movie_genres}},'|')) as genre ;;
+    relationship: one_to_many
   }
   }
 

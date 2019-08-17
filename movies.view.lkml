@@ -22,3 +22,9 @@ view: movies {
     drill_fields: [movie_id, movie_name, ratings.count]
   }
 }
+
+view: genre {
+  dimension: name {
+    sql: ${TABLE} ;;
+  }
+}
