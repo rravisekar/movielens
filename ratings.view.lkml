@@ -29,7 +29,7 @@ view: ratings {
       quarter,
       year
     ]
-    sql: ${TABLE}."timestamp" ;;
+    sql: ${TABLE}.timestamp ;;
   }
 
 
