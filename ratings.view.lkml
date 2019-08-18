@@ -47,6 +47,6 @@ view: ratings {
   measure: average {
     type: average
     sql: ${TABLE}.ratings ;;
-    drill_fields: [movie_id, ratings.avg]
+    drill_fields: [user_id, ratings]
   }
 }
