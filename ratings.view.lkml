@@ -3,6 +3,7 @@ view: ratings {
 
   dimension: id {
     type:number
+    hidden: yes
     primary_key: yes
   }
 
