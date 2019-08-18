@@ -4,7 +4,7 @@ view: ratings {
   dimension: id {
     hidden: yes
     primary_key: yes
-    sql: CONCAT(${TABLE}.user_id, ${TABLE}.movie_id) ;;
+    sql: CONCAT(CAST(${TABLE}.user_id as string), cast (${TABLE}.movie_id as string)) ;;
   }
 
 
