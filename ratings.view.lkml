@@ -2,9 +2,9 @@ view: ratings {
   sql_table_name: movielens.ratings ;;
 
   dimension: id {
-    type:number
     hidden: yes
     primary_key: yes
+    sql: ${TABLE}.id ;;
   }
 
 
