@@ -1,6 +1,10 @@
 view: ratings {
   sql_table_name: movielens.ratings ;;
 
+  dimension: id {
+    type:number
+    primary_key: yes
+  }
 
 
   dimension: user_id {
